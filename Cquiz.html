@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>C Quiz</title>
+	<link rel="stylesheet" type="text/css" href="Cquiz.css">
+	<script type="text/javascript" src="Cquiz.js"></script>
+	
+</head>
+<body>
+	<form name="quiz" id="quiz">
+		<div>
+			<p>1.  What will be the output of the program?<br>
+
+     				#include<stdio.h><br>
+					int main()<br>
+					{<br>
+    				const int i=0;<br>
+    				printf("%dn", i++);<br>
+    				return 0;<br>
+					}</p>
+			<p><input type="radio" name="question1" value="10">A. 10</p>
+			<p><input type="radio" name="question1" value="11">B. 11</p>
+			<p><input type="radio" name="question1" value="no output">C. no output</p>
+			<p><input type="radio" name="question1" value="ERROR: ++needs a value">D. ERROR: ++needs a value</p>
+		</div>
+
+		<div>
+			<p>2.  What will be the output of the program?<br>
+
+     				#include<stdio.h><br>
+					int get();<br>
+					int main()<br>
+					{<br>
+    					const int x = get();<br>
+    					printf("%d", x);<br>
+    						return 0;<br>
+					}<br>
+					int get()<br>
+					{<br>
+    					return 20;<br>
+					}</p>
+			<p><input type="radio" name="question2" value="Garbage value">A. Garbage value</p>
+			<p><input type="radio" name="question2" value="error">B. error</p>
+			<p><input type="radio" name="question2" value="20">C. 20</p>
+			<p><input type="radio" name="question2" value="0">D. 0</p>
+		</div>
+
+		<div>
+			<p>3.  What does the following declaration mean?<br>int (*ptr)[10];<br></p>
+
+			<p><input type="radio" name="question3" value="ptr is array of pointers to 10 integers">A. ptr is array of pointers to 10 integers</p>
+			<p><input type="radio" name="question3" value="ptr is a pointer to an array of 10 integers">B. ptr is a pointer to an array of 10 integers</p>
+			<p><input type="radio" name="question3" value="ptr is an array of 10 integers">C. ptr is an array of 10 integers</p>
+			<p><input type="radio" name="question3" value="ptr is an pointer to array">D. ptr is an pointer to array</p>
+		</div>
+
+		<div>
+			<p>4.  What will be the output of the program?<br>
+
+					#include<stdio.h><br>
+					#define MAN(x, y) ((x)>(y)) ? (x):(y);<br>
+					int main()<br>
+					{<br>
+    					int i=10, j=5, k=0;<br>
+    					k = MAN(++i, j++);<br>
+    					printf("%d, %d, %dn", i, j, k);<br>
+    					return 0;<br>
+					}<br></p>
+
+
+			<p><input type="radio" name="question4" value="12,6,12">A. 12,6,12</p>
+			<p><input type="radio" name="question4" value="11,5,11">B. 11,5,11</p>
+			<p><input type="radio" name="question4" value="11,5,garbage">C. 11,5,garbage</p>
+			<p><input type="radio" name="question4" value="12,6,garbage">D. 12,6,garbage</p>
+		</div>
+
+		<div>
+			<p>5.  What is (void*)0?<br></p>
+
+			<p><input type="radio" name="question5" value="Representation of NULL pointer">A. Representation of NULL pointer</p>
+			<p><input type="radio" name="question5" value=" Representation of void pointer">B.  Representation of void pointer</p>
+			<p><input type="radio" name="question5" value=" Error">C.  Error</p>
+			<p><input type="radio" name="question5" value=" None of above">D.  None of above</p>
+		</div>
+
+		<div>
+			<p>6.  What will be the output of the program?<br>
+
+					#include<stdio.h><br>
+					#define SQR(x)(x*x)<br>
+					int main()<br>
+					{<br>
+    					int a, b=3;<br>
+    					a = SQR(b+2);<br>
+    					printf("%dn", a);<br>
+    					return 0;<br>
+					}<br></p>
+
+			<p><input type="radio" name="question6" value="25">A. 25</p>
+			<p><input type="radio" name="question6" value="11">B. 11</p>
+			<p><input type="radio" name="question6" value="error">C. error</p>
+			<p><input type="radio" name="question6" value="garbage value">D. garbage value</p>
+		</div>
+
+		<div>
+			<p>7.   What will be the output of the program?<br>
+
+					#include<br>
+					#define MAX(a, b, c) (a>b ? a>c ? a : c: b>c ? b : c)<br>
+					int main()<br>
+					{<br>
+    					int x;<br>
+    					x = MAX(3+2, 2+7, 3+7);<br>
+    					printf("%dn", x);<br>
+    					return 0;<br>
+					}<br></p>
+
+			<p><input type="radio" name="question7" value="5">A. 5</p>
+			<p><input type="radio" name="question7" value="9">B. 9</p>
+			<p><input type="radio" name="question7" value="10">C. 10</p>
+			<p><input type="radio" name="question7" value="3+7">D. 3+7</p>
+		</div>
+
+		<div>
+			<p>8.  Which of the following statements are correct about 6 used in the program?<br>
+					int num[6];<br>
+					num[6]=21;<br></p>
+
+			<p><input type="radio" name="question8" value="In the first statement 6 specifies a particular element, whereas in the second statement it specifies a type">A. In the first statement 6 specifies a particular element, whereas in the second statement it specifies a type</p>
+			<p><input type="radio" name="question8" value="In the first statement 6 specifies a array size, whereas in the second statement it specifies a particular element of array.">B. In the first statement 6 specifies a array size, whereas in the second statement it specifies a particular element of array.</p>
+			<p><input type="radio" name="question8" value="In the first statement 6 specifies a particular element, whereas in the second statement it specifies a array size.">C. In the first statement 6 specifies a particular element, whereas in the second statement it specifies a array size.</p>
+			<p><input type="radio" name="question8" value=" In both the statement 6 specifies array size.">D.  In both the statement 6 specifies array size.</p>
+		</div>
+
+		<div>
+			<p>9.  What will be the output of the program ?<br>
+
+					#include<stdio.h><br>
+					void fun(int **p);<br>
+					int main()<br>
+					{<br>
+    					int a[3][4] = {1, 2, 3, 4, 4, 3, 2, 8, 7, 8, 9, 0};<br>
+    					int *ptr;<br>
+    					ptr = &a[0][0];<br>
+    					fun(&ptr);<br>
+    					return 0;<br>
+					}<br>
+					void fun(int **p)<br>
+					{<br>
+    					printf("%dn", **p);<br>
+					}<br></p>
+			
+
+			<p><input type="radio" name="question9" value="1">A. 1</p>
+			<p><input type="radio" name="question9" value="2">B. 2</p>
+			<p><input type="radio" name="question9" value="3">C. 3</p>
+			<p><input type="radio" name="question9" value="4">D. 4</p>
+		</div>
+
+		<div>
+			<p>10. What will be the output of the program in Turb C (under DOS)?<br>
+
+					#include<stdio.h><br>
+					int main()<br>
+					{<br>
+    					int arr[5], i=0;<br>
+    					while(i<5)<br>
+        					arr[i]=++i;<br>
+
+    					for(i=0; i<5; i++)<br>
+        					printf("%d, ", arr[i]);<br>
+
+   						return 0;<br>
+					}<br></p>
+
+
+			<p><input type="radio" name="question10" value="1,2,3">A. 1,2,3</p>
+			<p><input type="radio" name="question10" value="garbage value 1,2,3,4">B. garbage value 1,2,3,4</p>
+			<p><input type="radio" name="question10" value="1,2,3,4,5">C. 1,2,3,4,5</p>
+			<p><input type="radio" name="question10" value="1,4,5">D. 1,4,5</p>
+		</div>
+
+
+
+		<input type="button" name="" value="I'm done!" id="button" onclick="check()">
+</form>
+
+<p id="result"></p>
+</body>
+</html>
+
